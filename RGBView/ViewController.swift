@@ -40,22 +40,40 @@ class ViewController: UIViewController {
         redColorLabel.text = String(redSlider.value)
         greenColorLabel.text = String(greenSlider.value)
         blueColorLabel.text = String(blueSlider.value)
+        
     }
 
     override func viewWillLayoutSubviews() {
         mainView.layer.cornerRadius = 30
     }
-
+   
+   
     @IBAction func redSliderAction() {
+        let redSliderValue = CGFloat(redSlider.value)
+        let greenSliderValue = CGFloat(greenSlider.value)
+        let blueSliderValue = CGFloat(blueSlider.value)
+        
         redColorLabel.text = String(round(100 * redSlider.value)/100)
+        mainView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: redSliderValue)
     }
     
     @IBAction func greenSliderAction() {
         greenColorLabel.text = String(round(100 * greenSlider.value)/100)
+        let redSliderValue = CGFloat(redSlider.value)
+        let greenSliderValue = CGFloat(greenSlider.value)
+        let blueSliderValue = CGFloat(blueSlider.value)
+        
+        mainView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: greenSliderValue)
     }
     
     @IBAction func blueSliderAction() {
         blueColorLabel.text = String(round(100 * blueSlider.value)/100)
+        
+        let redSliderValue = CGFloat(redSlider.value)
+        let greenSliderValue = CGFloat(greenSlider.value)
+        let blueSliderValue = CGFloat(blueSlider.value)
+        
+        mainView.backgroundColor = UIColor(red: redSliderValue, green: greenSliderValue, blue: blueSliderValue, alpha: blueSliderValue)
     }
 }
 

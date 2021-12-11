@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RGBView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cen-0N-jOt">
-                                <rect key="frame" x="20" y="44" width="334" height="169"/>
+                                <rect key="frame" x="20" y="88" width="373" height="188.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cen-0N-jOt" secondAttribute="height" multiplier="334:169" id="vsp-Qc-Zsz"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="KsM-bJ-Pfr">
-                                <rect key="frame" x="16" y="278" width="66" height="136.5"/>
+                                <rect key="frame" x="16" y="341.5" width="105" height="136.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TFw-Yg-ZcG">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="27.5"/>
@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="EwH-WZ-wFu">
-                                <rect key="frame" x="90" y="278" width="54.5" height="136.5"/>
+                                <rect key="frame" x="129" y="341.5" width="54.5" height="136.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-Nk-67H">
                                         <rect key="frame" x="0.0" y="0.0" width="54.5" height="27.5"/>
@@ -70,7 +70,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="oXj-L8-bZh">
-                                <rect key="frame" x="170" y="278" width="174" height="138"/>
+                                <rect key="frame" x="209" y="341.5" width="174" height="138"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ldh-xZ-0AO">
                                         <rect key="frame" x="-2" y="0.0" width="178" height="31"/>
@@ -110,8 +110,8 @@
                             <constraint firstItem="EwH-WZ-wFu" firstAttribute="leading" secondItem="KsM-bJ-Pfr" secondAttribute="trailing" constant="8" symbolic="YES" id="ZsF-mZ-bjn"/>
                             <constraint firstItem="KsM-bJ-Pfr" firstAttribute="top" secondItem="cen-0N-jOt" secondAttribute="bottom" constant="65" id="c3d-mU-EKb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EwH-WZ-wFu" secondAttribute="trailing" constant="230.5" id="gVT-Ej-TgS"/>
-                            <constraint firstItem="cen-0N-jOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ikt-eg-3z7"/>
                             <constraint firstItem="KsM-bJ-Pfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pdp-5O-dq0"/>
+                            <constraint firstItem="cen-0N-jOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sUl-6e-bRf"/>
                         </constraints>
                     </view>
                     <connections>

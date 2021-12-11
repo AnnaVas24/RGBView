@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cen-0N-jOt">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cen-0N-jOt">
                                 <rect key="frame" x="20" y="44" width="334" height="169"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -75,14 +75,23 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ldh-xZ-0AO">
                                         <rect key="frame" x="-2" y="0.0" width="178" height="31"/>
                                         <color key="tintColor" systemColor="systemGray3Color"/>
+                                        <connections>
+                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="BYc-hw-TBh"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kyk-ur-Win">
                                         <rect key="frame" x="-2" y="54" width="178" height="31"/>
                                         <color key="tintColor" systemColor="systemGray3Color"/>
+                                        <connections>
+                                            <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="0Vn-uQ-ots"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="foZ-qq-krp">
                                         <rect key="frame" x="-2" y="108" width="178" height="31"/>
                                         <color key="tintColor" systemColor="systemGray3Color"/>
+                                        <connections>
+                                            <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="s2o-He-7XB"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -105,10 +114,19 @@
                             <constraint firstItem="KsM-bJ-Pfr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pdp-5O-dq0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueColorLabel" destination="wGH-Fg-yZK" id="zb4-Vp-K3C"/>
+                        <outlet property="blueSlider" destination="foZ-qq-krp" id="6DQ-XW-C4S"/>
+                        <outlet property="greenColorLabel" destination="j5z-hG-fCY" id="sdM-QF-uwl"/>
+                        <outlet property="greenSlider" destination="Kyk-ur-Win" id="xsl-sY-klN"/>
+                        <outlet property="mainView" destination="cen-0N-jOt" id="dm2-bK-kFJ"/>
+                        <outlet property="redColorLabel" destination="nh7-Nk-67H" id="iFA-1G-QZO"/>
+                        <outlet property="redSlider" destination="ldh-xZ-0AO" id="hia-pA-0vE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-618.39999999999998" y="111.0944527736132"/>
+            <point key="canvasLocation" x="-1150" y="120"/>
         </scene>
     </scenes>
     <resources>
